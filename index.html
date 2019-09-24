@@ -1,9 +1,57 @@
+
+<!doctype html>
+<html>
+
 <head>
-  <script language="javascript">
-    function redirect(){
-      window.location = "http://www.baidu.com";
-    }
-  </script>
+    <meta charset="utf-8">
+    <style>
+        .container {
+            width: 60%;
+            margin: 10% auto 0;
+            font-size: 40px;
+            background-color: #85b84f;
+            padding: 2% 5%;
+            border-radius: 10px
+        }
+
+        ul {
+            padding-left: 20px;
+
+        }
+
+        ul li {
+            line-height: 2.3;
+
+            text-align: center;
+
+        }
+
+        a {
+            color: #6c6c6c;
+            text-decoration: none;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+        function checkurl() {
+            var strU = "http://47.93.4.220/";
+            window.location.href = strU;
+        }
+    </script>
+
 </head>
-<body onload="redirect()">
+
+<body>
+    <div class="container">
+        <ul>
+
+            <h1>
+                <li style="list-style: none; text-align:center;"><a id="baidu" href="http://www.baidu.com"
+                        onclick="checkurl();return false;">点击到我的博客</a></li>
+            </h1>
+        </ul>
+    </div>
 </body>
+
+</html>
